@@ -1,4 +1,4 @@
-import { PerilsPage } from "./views"
+import { PerilsPage } from "@/views"
 
 import './App.css'
 

@@ -1,3 +1,4 @@
+import { PageHeader } from '@/components'
 import classes from './TopBanner.module.css'
 
 type TopBannerProps = {
@@ -8,14 +9,7 @@ type TopBannerProps = {
 function TopBanner({ title, description }: TopBannerProps) {
     return (
         <section className={classes.topBanner}>
-            <nav>
-                <ul>
-                    <li>Why hedvig</li>
-                    <li>Insurances</li>
-                    <li>The hedvig app</li>
-                    <li>Help</li>
-                </ul>
-            </nav>
+            <PageHeader />
             <div>
                 <h1>{title}</h1>
             </div>

@@ -1,4 +1,4 @@
-import { PerilsList, TopBanner } from '../../components'
+import { PerilsList, TopBanner } from '@/components'
 import { Suspense } from "react"
 
 function PerilsPage() {
