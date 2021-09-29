@@ -35,3 +35,49 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
+/* Utils */
+
+.button {
+  border: 1px solid var(--regular-font);
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-width: 10rem;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: var(--regular-font);
+  line-height: 1rem;
+  transition: all ease 0.2s;
+
+  &:hover {
+      background: var(--regular-font);
+      color: var(--inversed-font);
+  }
+
+  &[data-theme] {
+    border: none;
+  }
+
+  &[data-theme="light"] {
+    background-color: var(--elements-background);
+    color: var(--regular-font);
+  }
+
+  &[data-theme="dark"] {
+    background-color: var(--inveresed-element-background);
+    color: var(--inversed-font);
+  }
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1rem;
+}
