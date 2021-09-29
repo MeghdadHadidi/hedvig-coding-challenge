@@ -1,0 +1,31 @@
+.topBanner {
+    min-height: 30vh;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
+        url(https://www.hedvig.com/f/62762/2482x1498/02de022acc/hedvig_insurances_rental-2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    padding: 5.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    h1, p {
+        color: var(--inversed-font);
+    }
+
+    h1 {
+        margin-bottom: 0;
+    }
+}
+
+.getQuoteButton {
+    composes: button from global;
+    background-color: var(--elements-background);
+    display: inline-block;
+}
+
+.getQuoteButtonContainer {
+    margin-top: 1rem;
+}
