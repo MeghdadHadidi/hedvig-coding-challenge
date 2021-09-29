@@ -29,6 +29,10 @@
         cursor: pointer;
         transition: all 150ms ease-in-out 0s;
 
+        @below tablet {
+            padding: 0;
+        }
+
         &:hover {
             box-shadow: 0 0 1.2rem -0.4rem rgba(0, 0, 0, 0.4);
             transform: translateY(-2px);
@@ -54,6 +58,10 @@
         h4 {
             font-size: 1rem;
             font-weight: 400;
+
+            @between-from 0px mobile-landscape {
+                display: none;
+            }
         }
     }
 }

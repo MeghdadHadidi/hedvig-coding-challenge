@@ -17,5 +17,9 @@ h2 {
         width: 100%;
         max-width: calc(784px + 2rem);
         box-sizing: border-box;
+
+        @below table {
+            padding: 0 1rem;
+        }
     }
 }
