@@ -1,3 +1,4 @@
+import { DesktopNav } from '@/components'
 import classes from './PageHeader.module.css'
 import logoUrl from '@/assets/img/logo.svg'
 
@@ -9,6 +10,7 @@ function PageHeader() {
                     <img src={logoUrl} alt="Hedvig Logo" />
                 </a>
             </div>
+            <DesktopNav />
         </header>
     )
 }
