@@ -1,4 +1,4 @@
-import { DesktopNav } from '@/components'
+import { DesktopNav, MobileNav } from '@/components'
 import classes from './PageHeader.module.css'
 import logoUrl from '@/assets/img/logo.svg'
 
@@ -11,6 +11,7 @@ function PageHeader() {
                 </a>
             </div>
             <DesktopNav />
+            <MobileNav />
         </header>
     )
 }
