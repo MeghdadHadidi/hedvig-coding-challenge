@@ -1,6 +1,6 @@
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import usePerils from "./usePerils"
-import { PerilItem } from "@/components"
+import { PerilItem, SlidingPanel } from "@/components"
 import loadingSpinner from '@/assets/img/eclipse-98px.svg'
 
 import classes from './PerilsList.module.css'
@@ -9,6 +9,8 @@ import { Peril } from "@/store/types"
 const PerilsList = () => {
     const [activePeril, setActivePeril] = useState<Peril | null>(null)
     const { perils, isLoading, error } = usePerils()
+
+    const isDetailVisible = useMemo(() => !!activePeril, [activePeril])
 
     return (
         <section className={classes.perilsContainer}>
@@ -27,6 +29,10 @@ const PerilsList = () => {
                     <PerilItem key={index} peril={peril} onPerilClick={setActivePeril} />
                 ))}
             </div>
+
+            <SlidingPanel onPanelHidden={() => setActivePeril(null)} visible={isDetailVisible}>
+                <div>detail</div>
+            </SlidingPanel>
         </section>
     )
 }
