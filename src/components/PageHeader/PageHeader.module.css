@@ -8,13 +8,17 @@ header {
     padding: 0 1.5rem;
     box-sizing: border-box;
     background-color: #ffffff;
+    justify-content: space-between;
 
     > div {
-        flex: 1;
         display: flex;
         padding: 1rem 0;
         height: 3rem;
         justify-content: space-between;
+        
+        @above tablet {
+            flex: 1;
+        }
     }
 
     .brand {

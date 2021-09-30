@@ -29,8 +29,12 @@
         cursor: pointer;
         transition: all 150ms ease-in-out 0s;
 
-        @below tablet {
+        @between-to 0 mobile {
             padding: 0;
+        }
+
+        @between-to mobile tablet {
+            padding: 0.5rem;
         }
 
         &:hover {

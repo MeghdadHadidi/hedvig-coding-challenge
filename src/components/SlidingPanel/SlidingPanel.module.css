@@ -29,7 +29,7 @@
         transition: transform cubic-bezier(0.22, 0.61, 0.36, 1) .4s;
         overflow-y: auto;
 
-        @between-from mobile medium {
+        @between-from 0 medium {
             width: 100vw;
         }
 
