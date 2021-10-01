@@ -61,31 +61,42 @@
         }
 
         p {
-            opacity: 0;
-            margin-top: -10%;
-            transition: all ease 0.2s;
-            font-size: 0.7rem;
-            color: #666;
+            display: none;
+        }
+
+        @above tablet {
+            p {
+                display: block;
+                opacity: 0;
+                margin-top: -10%;
+                transition: all ease 0.2s;
+                font-size: 0.7rem;
+                color: #666;
+            }
         }
 
         &:hover {
             box-shadow: 0 0 1.2rem -0.4rem rgba(0, 0, 0, 0.4);
-            transform: translateY(-6px);
-            transform: scale(1.3);
-            z-index: 4;
+            transform: translateY(-3px);
 
-            > div {
-                width: 2rem;
-                height: 2rem;
-            }
+            @between-from medium large {
+                transform: translateY(-6px);
+                transform: scale(1.3);
+                z-index: 4;
 
-            h4 {
-                font-size: 0.7rem;
-            }
-
-            p {
-                margin-top: 1rem;
-                opacity: 1;
+                > div {
+                    width: 2rem;
+                    height: 2rem;
+                }
+    
+                h4 {
+                    font-size: 0.7rem;
+                }
+    
+                p {
+                    margin-top: 1rem;
+                    opacity: 1;
+                }
             }
         }
 
