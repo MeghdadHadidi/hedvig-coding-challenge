@@ -14,6 +14,7 @@ function PerilItem({ peril, onPerilClick }: PerilItemProps) {
                 <div>
                     <img src={peril.icon.variants.light.svgUrl} alt={peril.title} />
                 </div>
+                <p>{peril.shortDescription}</p>
                 <h4>{peril.title}</h4>
             </button>
         </div>
