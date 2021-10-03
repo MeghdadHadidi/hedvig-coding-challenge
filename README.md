@@ -41,7 +41,9 @@ I decided not to put too much time and energy on the layout and style, and just 
 ### Structure
 ---
 ├── src
+
 │   ├── assets
+
 │   ├── components
 
 │   ├── **hooks**
