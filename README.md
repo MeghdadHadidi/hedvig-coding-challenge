@@ -9,7 +9,7 @@ But before going further you might want to see the final verion in action.  A de
 ---
 1. Clone the project from this repo
 
- `https://github.com/MeghdadHadidi/hedvig-challenge.git`
+ `https://github.com/MeghdadHadidi/hedvig-coding-challenge.git`
 
 2. Use yarn to command to install the dependencies
 
