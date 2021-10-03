@@ -1,9 +1,9 @@
 # Hedvig Coding Challenge
 First of all, I wanted to thank you all 🙏 for the time you spend reviewing the code. Here is some info I think might be important to share.
 
-But before going further you might want to see the final verion in action.  A demo version is deployed 🎉 on Netlify and is accessible from [here](https://lucid-jepsen-c67f9c.netlify.app/ "here")
+But before going further you might want to see the final verion in action.  A demo version is deployed 🎉 on Netlify and is accessible from [here](https://vibrant-brahmagupta-ab9475.netlify.app/ "here")
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/958c5fad-c2a6-4aca-a80f-f5cf8d212540/deploy-status)](https://app.netlify.com/sites/lucid-jepsen-c67f9c/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/10923e80-835d-4060-9f35-6386b653d953/deploy-status)](https://app.netlify.com/sites/vibrant-brahmagupta-ab9475/deploys)
 
 ### How to run
 ---
